@@ -1,0 +1,55 @@
+# build.prop Tweaks
+# Author: @RAAJK20Pro
+
+###########################################
+# 🌐 NETWORK & COMMUNICATION              
+###########################################
+
+# VOLTE-WIFI COEXISTENCE FIXES
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.rat_on=combine
+persist.radio.data_ltd_sys_ind=1
+persist.radio.data_con_rprt=1
+persist.radio.calls.on.ims=1
+persist.radio.volte.dan_support=true
+
+# IMS PROFILE STABILITY
+persist.ims.volte=true
+persist.ims.vt=true
+persist.ims.vt.epdg=true
+persist.ims.disableADBLogs=1
+persist.ims.disableDebugLogs=1
+persist.ims.disableQXDMLogs=1
+persist.ims.disableIMSLogs=1
+
+# NETWORK HANDOVER OPTIMIZATION
+ro.ril.enable.r8fd=1
+ro.ril.hsdpa.category=24
+ro.ril.hsupa.category=8
+ro.ril.hsxpa=5
+ro.ril.radio.svn=1
+ro.ril.enable.sdr=1
+ro.ril.enable.gea3=1
+
+# CARRIER AGGREGATION (CA) TWEAKS
+persist.radio.enable_temp_dds=true
+persist.radio.aosp_usr_pref_sel=true
+persist.radio.mcfg_enabled=1
+persist.radio.force_on_dc=true
+
+# WIFI CALLING (VoWiFi) COMPATIBILITY
+persist.radio.rat_on=combine
+persist.radio.videopause.mode=1
+persist.data.iwlan.enable=true
+persist.dbg.ims_volte_enable=1
+
+# Improve bandwidth for real-time communication
+net.tcp.default_init_rwnd=10000
+
+# Reduce network jitter
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.lte=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960

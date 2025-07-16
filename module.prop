@@ -1,0 +1,7 @@
+id=NetworkEnhancer
+name=NetworkEnhancer
+version=1.0
+versionCode=10
+author= @RAAJK20Pro
+description=A Kernel-level Network Optimizer for Android that Reduces Latency, Boosts Throughput, and Stabilizes Connections. Logs to /sdcard/NetworkEnhancer.log
+updateJson=https://raw.githubusercontent.com/RAAJK20Pro/NetworkEnhancer/main/update.json
