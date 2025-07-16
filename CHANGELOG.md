@@ -22,5 +22,4 @@
 
 • 🎯 Reduces packet loss in online gaming
 
-📁 GitHub: NetworkEnhancer
-📬 Channel: @Raphaelgamers
+📬 # Channel: @Raphaelgamers
