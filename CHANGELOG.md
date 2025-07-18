@@ -4,7 +4,7 @@ By: @RAAJK20Pro
 
 ## OTA Changelog
 
-# 🔧 Fixes & Compatibility
+### 🔧 Fixes & Compatibility
 ✅ VPN Connectivity Fixed
 rp_filter set to 0
 
