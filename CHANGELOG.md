@@ -1,6 +1,6 @@
 ## NetworkEnhancer v2.0
-Release Date: 2025-07-18
-By: @RAAJK20Pro
+#### Release Date: 2025-07-18
+### By: @RAAJK20Pro
 
 ## OTA Changelog
 
