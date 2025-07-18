@@ -2,6 +2,8 @@
 #### Release Date: 2025-07-18
 ### By: @RAAJK20Pro
 
+support :https://t.me/KernelEnhancer
+
 ## OTA Changelog
 
 ### 🔧 Fixes & Compatibility
