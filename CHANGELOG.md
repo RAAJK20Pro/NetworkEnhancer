@@ -8,7 +8,7 @@ By: @RAAJK20Pro
 ✅ VPN Connectivity Fixed
 rp_filter set to 0
 
-## 🚀 Performance Improvements
+### 🚀 Performance Improvements
 📡 Core TCP and UDP buffer sizes retuned (faster packet transfer)
 
 🗂️ Logs saved to /sdcard/NetworkEnhancer.log for user review
