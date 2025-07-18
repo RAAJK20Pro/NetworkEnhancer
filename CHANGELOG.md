@@ -1,27 +1,14 @@
-NetworkEnhancer v1.0
+# NetworkEnhancer v2.0
+Release Date: 2025-07-18
+By: @RAAJK20Pro
 
-📅 Updated: 2025-07-16
+# OTA Changelog
 
-👤 By @RAAJK20Pro
+# 🔧 Fixes & Compatibility
+✅ VPN Connectivity Fixed
+rp_filter set to 0
 
-🚀 Changelog:
+# 🚀 Performance Improvements
+📡 Core TCP and UDP buffer sizes retuned (faster packet transfer)
 
-• 🧠 Optimized core network buffers for faster packet delivery
-
-• 📡 Enabled ultra-low latency TCP mode
-
-• 📶 Boosted TCP & UDP send/receive performance
-
-• ⚡ Activated fast connection reuse & reduced timeouts
-
-• 🌐 Tuned ARP cache and socket memory buffers
-
-• 🔒 Applied kernel-level security tweaks without performance loss
-
-• 💾 Auto logging to /data/local/tmp + /sdcard
-
-• ✅ Systemless & boot-persistent (Magisk compatible)
-
-• 🎯 Reduces packet loss in online gaming
-
-📬 Channel: @Raphaelgamers
+🗂️ Logs saved to /sdcard/NetworkEnhancer.log for user review
