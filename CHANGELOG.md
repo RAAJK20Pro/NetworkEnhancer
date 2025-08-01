@@ -1,7 +1,9 @@
 ### NetworkEnhancer v3
 
 📅 Release Date: 2025-08-01
+
 👤 Author: @RAAJK20Pro
+
 📦 Module: Magisk/KSU
 
 ### What's New:
