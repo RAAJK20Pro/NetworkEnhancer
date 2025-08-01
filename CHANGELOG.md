@@ -1,3 +1,9 @@
+### NetworkEnhancer v3
+
+📅 Release Date: 2025-08-01
+👤 Author: @RAAJK20Pro
+📦 Module: Magisk/KSU
+
 ### What's New:
 
 📁 Robust Logging System – Logs saved to both /data/local/tmp and /sdcard with full diagnostics fallback if empty.
