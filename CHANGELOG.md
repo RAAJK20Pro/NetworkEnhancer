@@ -1,15 +1,18 @@
-What's New:
+### What's New:
 
 📁 Robust Logging System – Logs saved to both /data/local/tmp and /sdcard with full diagnostics fallback if empty.
 
 ⚠️ Failsafe Mechanism Enhanced – Emergency logs added for permission, SELinux, and storage issues.
 
 🆕 Dynamic MTU Optimization applied to wlan0/rmnet0/ccmni/radio → value set: 1400
+
 🆕 Enabled tcp_ecn = 1 for Explicit Congestion Notification
+
 🆕 Aggressive TCP FIN cleanup:
    • tcp_fin_timeout = 15
    • tcp_max_orphans = 4096
    • tcp_orphan_retries = 2
+   
 🆕 UDP Memory Buffer scaling:
    • udp_mem = 8192 65536 524288
 
