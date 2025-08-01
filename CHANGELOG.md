@@ -1,19 +1,25 @@
-## NetworkEnhancer v2.0
-#### Release Date: 2025-07-18
-### By: @RAAJK20Pro
+What's New:
 
-Support :https://t.me/KernelEnhancer
+📁 Robust Logging System – Logs saved to both /data/local/tmp and /sdcard with full diagnostics fallback if empty.
 
-## OTA Changelog
+⚠️ Failsafe Mechanism Enhanced – Emergency logs added for permission, SELinux, and storage issues.
 
-### 🔧 Fixes & Compatibility
+🆕 Dynamic MTU Optimization applied to wlan0/rmnet0/ccmni/radio → value set: 1400
+🆕 Enabled tcp_ecn = 1 for Explicit Congestion Notification
+🆕 Aggressive TCP FIN cleanup:
+   • tcp_fin_timeout = 15
+   • tcp_max_orphans = 4096
+   • tcp_orphan_retries = 2
+🆕 UDP Memory Buffer scaling:
+   • udp_mem = 8192 65536 524288
 
-✅ VPN Connectivity Fixed
+🌐 Local Network Optimization:
 
-rp_filter set to 0
+• Tuned ARP cache GC thresholds for better LAN performance
 
-### 🚀 Performance Improvements
+🧵 Unix & DNS Tweaks
 
-📡 Core TCP and UDP buffer sizes retuned (faster packet transfer)
+• Increased max_dgram_qlen to 4096
+• Reduced ipfrag_time to 10 for faster DNS refresh
 
-🗂️ Logs saved to /sdcard/NetworkEnhancer.log for user review
+✅ Safe for gaming, streaming, and performance-heavy networking tasks.
