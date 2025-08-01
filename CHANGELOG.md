@@ -9,11 +9,13 @@
 🆕 Enabled tcp_ecn = 1 for Explicit Congestion Notification
 
 🆕 Aggressive TCP FIN cleanup:
+
    • tcp_fin_timeout = 15
    • tcp_max_orphans = 4096
    • tcp_orphan_retries = 2
    
 🆕 UDP Memory Buffer scaling:
+
    • udp_mem = 8192 65536 524288
 
 🌐 Local Network Optimization:
