@@ -1,40 +1,68 @@
-### NetworkEnhancer v3
+# 🌐 NetworkEnhancer v4 — Changelog
 
-📅 Release Date: 2025-08-01
+## ✅ Added
+- **Auto Queue Discipline Selection**
+  - Kernel support ke according auto select:
+    - `fq` → `fq_codel` → `pfifo_fast`
+  - Prevents bufferbloat & network-induced input lag
+- **Kernel-aware Qdisc apply**
+  - Sirf active interfaces (`wlan*`, `rmnet*`) pe apply
+- **Network-only build.prop support**
+  - Minimal TCP behavior tuning
+  - No DNS forcing, no fake buffer props
+- **Improved logging system**
+  - Short timestamps (`HH:MM`)
+  - Clear success / warning states
+- **Read-only sysfs detection**
+  - Prevents silent failures on locked nodes
 
-👤 Author: @RAAJK20Pro
+---
 
-📦 Module: Magisk/KSU
+## 🔧 Changed
+- **Core backlog tuning**
+  - `netdev_max_backlog`: `4096 → 1000`
+  - Reduces packet queue delay & CPU spikes
+- **MTU optimization refined**
+  - Forced `1400` ❌ → Safe conditional `1500` ✅
+- **TCP retry strategy balanced**
+  - Less aggressive, better long-session stability
+- **Congestion control logic simplified**
+  - Priority: `bbr2 → bbr → cubic`
+- **TCP reuse behavior**
+  - `tcp_tw_reuse` disabled to avoid random disconnects
+- **Execution flow cleaned**
+  - Better locking, no duplicate runs
 
-### What's New:
+---
 
-📁 Robust Logging System – Logs saved to both /data/local/tmp and /sdcard with full diagnostics fallback if empty.
+## ❌ Removed
+- Over-aggressive buffer inflation (V3 issue)
+- Forced MTU fragmentation logic
+- Route flush abuse
+- Excess ARP / orphan cleanup
+- Benchmark-focused tweaks causing FPS drops
+- Outdated / placebo-style tuning
 
-⚠️ Failsafe Mechanism Enhanced – Emergency logs added for permission, SELinux, and storage issues.
+---
 
-🆕 Dynamic MTU Optimization applied to wlan0/rmnet0/ccmni/radio → value set: 1400
+## 🐞 Fixed
+- FPS drops during gameplay
+- Random ping spikes & jitter
+- Input lag caused by bufferbloat
+- Unstable behavior on LTE / 5G networks
+- Long-session instability
 
-🆕 Enabled tcp_ecn = 1 for Explicit Congestion Notification
+---
 
-🆕 Aggressive TCP FIN cleanup:
+## 🎮 Gaming Impact
+- ✔️ More consistent ping
+- ✔️ Lower jitter
+- ✔️ Better hit registration feel
+- ✔️ Stable FPS
+- ✔️ Suitable for PUBG / BGMI / CODM
 
-   • tcp_fin_timeout = 15
-   
-   • tcp_max_orphans = 4096
-   
-   • tcp_orphan_retries = 2
-   
-🆕 UDP Memory Buffer scaling:
+---
 
-   • udp_mem = 8192 65536 524288
-
-🌐 Local Network Optimization:
-
-• Tuned ARP cache GC thresholds for better LAN performance
-
-🧵 Unix & DNS Tweaks
-
-• Increased max_dgram_qlen to 4096
-• Reduced ipfrag_time to 10 for faster DNS refresh
-
-✅ Safe for gaming, streaming, and performance-heavy networking tasks.
+## ⚠️ Note
+This update prioritizes **stability & consistency**,  
+not fake “magic ping” claimsfixix
