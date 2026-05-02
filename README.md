@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/RAAJK20Pro/NetworkEnhancer/main/EnhancerSource/GitHub/banner2.png" width="100%" />
+</p>
+
 <h1 align="center">NetworkEnhancer</h1>
 
 <p align="center">
