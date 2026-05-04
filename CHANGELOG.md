@@ -1,68 +1,71 @@
-# 🌐 NetworkEnhancer v4 — Changelog
+### 🌐 NetworkEnhancer v4 - Changelog
 
 ## ✅ Added
-- **Auto Queue Discipline Selection**
-  - Kernel support ke according auto select:
-    - `fq` → `fq_codel` → `pfifo_fast`
-  - Prevents bufferbloat & network-induced input lag
-- **Kernel-aware Qdisc apply**
-  - Sirf active interfaces (`wlan*`, `rmnet*`) pe apply
-- **Network-only build.prop support**
-  - Minimal TCP behavior tuning
-  - No DNS forcing, no fake buffer props
-- **Improved logging system**
-  - Short timestamps (`HH:MM`)
-  - Clear success / warning states
-- **Read-only sysfs detection**
-  - Prevents silent failures on locked nodes
+- **Fast Reconnect Mechanism**
+  - Optimized TCP retry handling
+  - Eliminates infinite "Reconnecting..." loops (PUBG/BGMI/CODM)
+- **TCP FastOpen (Level 3)**
+  - Enabled via system properties
+  - Reduces initial connection latency (skips 1 RTT)
+- **Fresh Connection Handling**
+  - `tcp_no_metrics_save` enabled
+  - Prevents reuse of degraded network profiles
+- **Premium Installer UI**
+  - Fully redesigned Magisk installer
+  - Clean, bold Unicode-based interface
 
 ---
 
 ## 🔧 Changed
-- **Core backlog tuning**
-  - `netdev_max_backlog`: `4096 → 1000`
-  - Reduces packet queue delay & CPU spikes
-- **MTU optimization refined**
-  - Forced `1400` ❌ → Safe conditional `1500` ✅
-- **TCP retry strategy balanced**
-  - Less aggressive, better long-session stability
-- **Congestion control logic simplified**
-  - Priority: `bbr2 → bbr → cubic`
-- **TCP reuse behavior**
-  - `tcp_tw_reuse` disabled to avoid random disconnects
-- **Execution flow cleaned**
-  - Better locking, no duplicate runs
+- **Anti-Bufferbloat Tuning**
+  - Refined TCP buffer sizing
+  - Minimizes jitter & ping spikes under load
+- **Port Reuse Strategy**
+  - `tcp_tw_reuse` enabled
+  - Improves stability during matchmaking & server switching
+- **VoLTE Stability Optimization**
+  - Fixed VoLTE icon disappearance issue
+  - Tuned ICMP redirect behavior (Jio/Airtel specific)
+- **Overall Network Behavior**
+  - Balanced latency vs stability
+  - Improved real-world gaming consistency
 
 ---
 
 ## ❌ Removed
-- Over-aggressive buffer inflation (V3 issue)
-- Forced MTU fragmentation logic
-- Route flush abuse
-- Excess ARP / orphan cleanup
-- Benchmark-focused tweaks causing FPS drops
-- Outdated / placebo-style tuning
+- **tcp_syncookies**
+  - Removed to ensure proper TCP Window Scaling & SACK efficiency
 
 ---
 
 ## 🐞 Fixed
-- FPS drops during gameplay
-- Random ping spikes & jitter
-- Input lag caused by bufferbloat
-- Unstable behavior on LTE / 5G networks
-- Long-session instability
+- Infinite reconnect loops in online games  
+- VoLTE icon disappearing randomly  
+- Inconsistent latency spikes under load  
+- Network instability during long sessions  
 
 ---
 
 ## 🎮 Gaming Impact
-- ✔️ More consistent ping
-- ✔️ Lower jitter
-- ✔️ Better hit registration feel
-- ✔️ Stable FPS
-- ✔️ Suitable for PUBG / BGMI / CODM
+- ✔️ More stable latency  
+- ✔️ Reduced jitter  
+- ✔️ Faster server connections  
+- ✔️ Better session stability  
+- ✔️ Improved competitive gameplay feel  
 
 ---
 
 ## ⚠️ Note
 This update prioritizes **stability & consistency**,  
-not fake “magic ping” claimsfixix
+not fake "magic ping" claims.
+
+---
+
+## 🔗 Links & Credits
+- Telegram: https://t.me/KernelEnhancer  
+- GitHub: https://github.com/RAAJK20Pro/NetworkEnhancer  
+
+---
+
+## 👨‍💻 Author
+**[@RAAJK20Pro](https://github.com/RAAJK20Pro)**
