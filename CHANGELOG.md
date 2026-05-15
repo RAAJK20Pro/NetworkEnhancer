@@ -1,4 +1,4 @@
-## ⚡ Network Enhancer V4
+# ⚡ Network Enhancer V4
 
 ## Changelog
 - Added adaptive RAM scaling profiles
@@ -18,6 +18,8 @@
 - Magisk / KernelSU / APatch supported
 
 ## Download
+
+### Click here to download
 
 [![Download](https://img.shields.io/badge/DOWNLOAD-orange?style=for-the-badge&logo=download&logoColor=white)](https://tpi.li/NetworkEnhancerV4)
 
