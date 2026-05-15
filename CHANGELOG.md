@@ -31,6 +31,6 @@
 
 [![KernelEnhancer](https://img.shields.io/badge/KernelEnhancer-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/KernelEnhancer)
 
-> [!WARNING]
-> Download link is provided above.  
-> Magisk / KernelSU / APatch OTA direct download is not supported due to shortlink redirection.
+[!WARNING]
+- Download link is provided above.  
+- Download/ KernelSU / APatch OTA direct download is not supported due to shortlink redirection.
