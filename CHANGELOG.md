@@ -25,12 +25,6 @@
 
 ---
 
-## 👨‍💻 Author
-
-[![RAAJK20Pro](https://img.shields.io/badge/RAAJK20Pro-red?style=plastic&logo=github&logoColor=white)](https://github.com/RAAJK20Pro)
-
-[![KernelEnhancer](https://img.shields.io/badge/KernelEnhancer-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/KernelEnhancer)
-
 [!WARNING]
 - Download link is provided above.  
 - Download/ KernelSU / APatch OTA direct download is not supported due to shortlink redirection.
