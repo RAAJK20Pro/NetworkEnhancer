@@ -1,30 +1,22 @@
-# ⚡ Network Enhancer V4
+#### NetworkEnhancer V4.1 Changelog
 
-## Changelog
-- Added adaptive RAM scaling profiles
-- Added dynamic TCP congestion control
-- Added gaming, balanced & download modes
-- Added hot-reload support without reboot
-- Added interface auto-detection & auto re-apply
-- Added VPN-safe DNS optimization
-- Added nftables + iptables fallback support
-- Added Wi-Fi optimization coverage
-- Added WebUI support
-- Improved latency, stability & responsiveness
-- Optimized for real Android devices
-
-## Notes
-- Root required
-- Magisk / KernelSU / APatch supported
-
-## Download
-
-### Click here to download
-
-[![Download](https://img.shields.io/badge/DOWNLOAD-orange?style=for-the-badge&logo=download&logoColor=white)](https://tpi.li/NetworkEnhancerV4)
+📅 Release Date: 2026-05-18
 
 ---
 
-[!WARNING]
-- Download link is provided above.  
-- Download/ KernelSU / APatch OTA direct download is not supported due to shortlink redirection.
+## DNS & WebUI Improvements
+
+### 🌐 Custom DNS
+- Added Custom DNS option in Private DNS section
+- Added floating modal with smooth background blur
+- Added hostname validation (blocks IPs & https:// links)
+- DNS state now restores correctly after reopening WebUI
+
+### 🔒 DNS Persistence Fix
+- Fixed Private DNS showing "Off" after reopening WebUI
+- WebUI now reads actual Android `private_dns_mode`
+- Improved DNS state synchronization on boot
+
+### ⚙️ Uninstall Cleanup
+- Added automatic Private DNS reset after module uninstall
+- Added temporary cleanup service for better ROM compatibility
