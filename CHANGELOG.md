@@ -1,4 +1,4 @@
-#### NetworkEnhancer V4.1 Changelog
+### NetworkEnhancer V4.1 Changelog
 
 📅 Release Date: 2026-05-18
 
@@ -17,6 +17,5 @@
 - WebUI now reads actual Android `private_dns_mode`
 - Improved DNS state synchronization on boot
 
-### ⚙️ Uninstall Cleanup
+### ⚙️ uninstall.sh Cleanup
 - Added automatic Private DNS reset after module uninstall
-- Added temporary cleanup service for better ROM compatibility
