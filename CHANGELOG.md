@@ -1,21 +1,29 @@
-### NetworkEnhancer V4.1 Changelog
+### NetworkEnhancer V6.5 Changelog
 
-📅 Release Date: 2026-05-18
+📅 Release Date: 2026-08-29
 
 ---
 
-## DNS & WebUI Improvements
+## What's New
 
-### 🌐 Custom DNS
-- Added Custom DNS option in Private DNS section
-- Added floating modal with smooth background blur
-- Added hostname validation (blocks IPs & https:// links)
-- DNS state now restores correctly after reopening WebUI
+### 🚀 Improvements
+- Reworked Speed Test engine with longer test duration, adaptive measurements, and retry-safe handling for more accurate real-world results.
+- Improved Speed Test reliability across different network conditions.
 
-### 🔒 DNS Persistence Fix
-- Fixed Private DNS showing "Off" after reopening WebUI
-- WebUI now reads actual Android `private_dns_mode`
-- Improved DNS state synchronization on boot
+### ⚡ Network Tuning
+- Added Busy Poll & Busy Read network tuning controls.
+- Supports values from 0–30µs with 0µs as the default disabled state.
 
-### ⚙️ uninstall.sh Cleanup
-- Added automatic Private DNS reset after module uninstall
+### 🎯 Net Boost
+- Improved app selection system.
+- Net Boost now shows only user-installed applications; system apps are excluded.
+
+### 🎨 UI/UX Updates
+- Redesigned navigation bar icons.
+- Added new Appearance theme previews.
+- Improved overall WebUI consistency and visual polish.
+
+### 🐛 Bug Fixes
+- Fixed block-list migration issues.
+- Cleaned and optimized service.sh internals.
+- Improved overall stability and performance.
